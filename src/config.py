@@ -32,10 +32,16 @@ STREAMLIT_PORT = 8501
 
 # Students must replace this example with their trained models.
 # Each entry must point to a serialized model saved as `.joblib`, `.pkl`, or `.pickle`.
+# L'import de MODELS_DIR est déjà fait plus haut dans ton config.py
 MODELS = {
-    "model_a": {
-        "name": "Model A",
-        "description": "A simple baseline model.",
-        "path": MODELS_DIR / "model_a.pkl",
+    "log_reg": {
+        "name": "Régression Logistique",
+        "description": "Modèle White-Box, idéal pour l'explicabilité métier.",
+        "path": MODELS_DIR / "log_reg.joblib",
+    },
+    "rf": {
+        "name": "Random Forest",
+        "description": "Modèle d'ensemble performant mais plus difficile à interpréter.",
+        "path": MODELS_DIR / "rf.joblib",
     },
 }
