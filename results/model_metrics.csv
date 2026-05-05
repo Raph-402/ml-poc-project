@@ -1,3 +1,4 @@
 model_key,model_name,model_path,accuracy,precision,recall,f1_score
 log_reg,Régression Logistique,/Users/Projet Data Albert School/ML/ProjetML/ml-poc-project/models/log_reg.joblib,0.8361111111111111,0.8201058201058201,0.8611111111111112,0.8401084010840109
 rf,Random Forest,/Users/Projet Data Albert School/ML/ProjetML/ml-poc-project/models/rf.joblib,0.8236111111111111,0.8010335917312662,0.8611111111111112,0.8299866131191432
+gb,Gradient Boosting,/Users/Projet Data Albert School/ML/ProjetML/ml-poc-project/models/gradient_boosting.joblib,0.8180555555555555,0.7913486005089059,0.8638888888888889,0.8260292164674635

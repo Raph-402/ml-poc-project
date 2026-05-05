@@ -44,4 +44,9 @@ MODELS = {
         "description": "Modèle d'ensemble performant mais plus difficile à interpréter.",
         "path": MODELS_DIR / "rf.joblib",
     },
+    "gb": {
+        "name": "Gradient Boosting",
+        "description": "Modèle très performant, favori des compétitions Data Science.",
+        "path": MODELS_DIR / "gradient_boosting.joblib",
+    },
 }
