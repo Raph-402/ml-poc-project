@@ -7,12 +7,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import joblib
 from pathlib import Path
+import os
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATA_PATH = PROJECT_ROOT / "data" / "rocket_league_skill_data.csv"
+DATA_PATH = Path(os.getenv("SMURF_DATA_PATH", PROJECT_ROOT / "data" / "rocket_league_skill_data.csv"))
 MODELS_DIR = PROJECT_ROOT / "models"
 
-def main():
+def main() -> None:
     print("⏳ Chargement des données...")
     df = pd.read_csv(DATA_PATH)
     
